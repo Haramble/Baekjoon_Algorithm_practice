@@ -23,7 +23,7 @@ int N,R,G,B,r,g,b;
 int main(){
     scanf("%d",&N);
     while(N--){
-        int t1 = R, t2 = G, t3 = B; //RGB를 임시적으로 저장해 놓는 이유는 그냥 RGB를 쓰게 되면 26,27번째 줄에서 update된 B가 쓰이므로 값이 이상해진다.
+        int t1 = R, t2 = G, t3 = B; //RGB를 임시적으로 저장해 놓는 이유는 그냥 RGB를 쓰게 되면 30,31번째 줄에서 update된 R이 쓰이므로 G와 B의 값이 이상해진다.
         scanf("%d %d %d",&r,&g,&b); //rgb를 입력받음
 
         R = t2 > t3 ? t3+r : t2+r; //위의 식을 코드로 옮긴것

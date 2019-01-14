@@ -11,15 +11,15 @@ vector<int> computer[101];
 deque<int> dq; //bfs를 위한 dq
 
 void bfs(){
-    dq.push_back(1); visit[1]=true; //시작을 1번컴퓨터에서 시작하므로 dq에 1을 넣고, 1번을 방문했다고 표시
-	  while(!dq.empty()){ //여기서부터 bfs(넓이우선탐색) 알고리즘. dq가 비어있으면 bfs 종료
-      int V = dq.front();
-      dq.pop_front();
-      vector<int>::iterator it; //연결되어있는 컴퓨터를 파악하기 위한 반복자(iterator)  선언
-      for(it = computer[V].begin(); it != computer[V].end(); it++){ //iterator를 이용하여 연결되어있는 컴퓨터 전부 방문
-        if(!visit[*it]){ //아직 방문하지 않은 컴퓨터이면
-          visit[*it]=true; ret++; //방문했다고 표시하고 ret증가
-          dq.push_back(*it); //dq에도 넣어줌
+	dq.push_back(1); visit[1]=true; //시작을 1번컴퓨터에서 시작하므로 dq에 1을 넣고, 1번을 방문했다고 표시
+	while(!dq.empty()){ //여기서부터 bfs(넓이우선탐색) 알고리즘. dq가 비어있으면 bfs 종료
+      		int V = dq.front();
+      		dq.pop_front();
+      		vector<int>::iterator it; //연결되어있는 컴퓨터를 파악하기 위한 반복자(iterator)  선언
+      		for(it = computer[V].begin(); it != computer[V].end(); it++){ //iterator를 이용하여 연결되어있는 컴퓨터 전부 방문
+        		if(!visit[*it]){ //아직 방문하지 않은 컴퓨터이면
+          		visit[*it]=true; ret++; //방문했다고 표시하고 ret증가
+          		dq.push_back(*it); //dq에도 넣어줌
 			}
 		}
 	}

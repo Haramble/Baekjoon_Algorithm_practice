@@ -38,7 +38,7 @@ int main(){
 			for(int i=0; i<4; i++){ //익은토마토의 왼쪽, 오른쪽, 앞, 뒤 모두 체크
 				int posY = cur.first+dy[i];
 				int posX = cur.second+dx[i];
-				if(posX>=0 && posY>=0 && posX<N && posY<M && BOX[posY][posX]==0){덜 익은 토마토가 있으면 익은걸로 바꿔주고 queue에 넣는다
+				if(posX>=0 && posY>=0 && posX<N && posY<M && BOX[posY][posX]==0){ //덜 익은 토마토가 있으면 익은걸로 바꿔주고 queue에 넣는다
 					BOX[posY][posX] = 1;
 					ripe.push(make_pair(posY,posX));
 					nextTom--; //덜익은 토마토 갯수 감소

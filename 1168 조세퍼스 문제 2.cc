@@ -12,8 +12,8 @@ int main(){
 	v.push_back(N);
 	for(int i=1; i<N; i++) v.push_back(i);
 
-  int a = N;
-  vector<int>::iterator it = v.begin();
+  	int a = N;
+  	vector<int>::iterator it = v.begin();
 	printf("<");
 	for(int i=0; i<N-1; i++){
 		it += M;

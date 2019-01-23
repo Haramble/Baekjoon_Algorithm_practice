@@ -19,6 +19,6 @@ int main(){
 		A = B;
 		B = r;
 	}
-	printf("%lld\n",ans/A);
+	printf("%lld\n",ans/A); //최소공배수 
     return 0;
 }

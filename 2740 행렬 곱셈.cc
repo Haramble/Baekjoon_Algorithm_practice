@@ -1,7 +1,9 @@
 #include <iostream>
 
 using namespace std;
-
+/*
+행렬 곱셈을 출력한다.
+*/
 int N, M, K, A[100][100], B[100][100];
 
 int main(){

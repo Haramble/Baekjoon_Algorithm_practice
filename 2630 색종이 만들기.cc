@@ -1,7 +1,9 @@
 #include <iostream>
 
 using namespace std;
-
+/*
+1992번 쿼드트리 문제랑 거의 
+*/
 int N, MAP[128][128], ans0, ans1;
 
 void chk(int y, int x, int n){
